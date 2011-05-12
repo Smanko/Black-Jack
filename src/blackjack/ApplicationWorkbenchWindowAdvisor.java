@@ -23,6 +23,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setShowMenuBar(true);
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(false);
-		configurer.setTitle("BJ");
+		configurer.setTitle("Black Jack");
 	}
 }

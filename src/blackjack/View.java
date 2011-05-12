@@ -1,6 +1,6 @@
 package blackjack;
 
-import model.BJHand;
+import model.BlackJackHand;
 import model.Card;
 import model.Deck;
 
@@ -23,8 +23,8 @@ public class View extends ViewPart {
 	private Composite parent;
 	
 	private Deck deck;
-	private BJHand hand = new BJHand();
-	private BJHand dealersHand = new BJHand();
+	private BlackJackHand hand = new BlackJackHand();
+	private BlackJackHand dealersHand = new BlackJackHand();
 	private Text handLabel;
 	private Text dealersHandLabel;
 	private Text scoreLabel;
@@ -79,7 +79,7 @@ public class View extends ViewPart {
 		updateHandLabel(dealersHandLabel, dealersHand);
 	}
 
-	private void updateHandLabel(Text text, BJHand hand) {
+	private void updateHandLabel(Text text, BlackJackHand hand) {
 		text.setText("");
 		for(Card c : hand.getHand()){
 			text.append(c + " ");

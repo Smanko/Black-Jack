@@ -47,7 +47,7 @@
          <menu
                label="File">
             <command
-                  commandId="blackjack.new"
+                  commandId="BlackJack.new"
                   label="New Game"
                   style="push">
             </command>
@@ -70,7 +70,7 @@
          id="bindings"
          point="org.eclipse.ui.bindings">
       <key
-            commandId="blackjack.new"
+            commandId="BlackJack.new"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="F6">

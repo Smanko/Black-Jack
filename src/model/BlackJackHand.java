@@ -1,6 +1,6 @@
 package model;
 
-public class BJHand extends Hand {
+public class BlackJackHand extends Hand {
 	
 	public int getScore(){
 		int score = calculateScore(11);

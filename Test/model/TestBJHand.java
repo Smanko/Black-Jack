@@ -8,7 +8,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldEvaluateJto10(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		Card jackOfHearts = new Card(Suite.HEARTS, 11);
 		hand.add(jackOfHearts);
 		assertEquals(10, hand.getScore());
@@ -16,7 +16,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldEvaluateQto10(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		Card queenOfHearts = new Card(Suite.HEARTS, 12);
 		hand.add(queenOfHearts);
 		assertEquals(10, hand.getScore());
@@ -24,7 +24,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldEvaluateKto10(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		Card kingOfHearts = new Card(Suite.HEARTS, 13);
 		hand.add(kingOfHearts);
 		assertEquals(10, hand.getScore());
@@ -32,7 +32,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldEvaluateAto11WhenTotalValueOfHandIsLessThan22(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		Card aceOfHearts = new Card(Suite.HEARTS, 14);
 		hand.add(aceOfHearts);
 		assertEquals(11, hand.getScore());
@@ -40,7 +40,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldAccumulateValuesOfCardsInHand(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		int valueOfFirstCard = 6;
 		Card sixOfSpades = new Card(Suite.SPADES, valueOfFirstCard);
 		hand.add(sixOfSpades);
@@ -52,7 +52,7 @@ public class TestBJHand {
 	
 	@Test
 	public void shouldEvaluateAto1IfTotalValueOfHandExceeds21(){
-		BJHand hand = new BJHand();
+		BlackJackHand hand = new BlackJackHand();
 		int valueOfFirstCard = 10;
 		hand.add(new Card(Suite.DIAMONDS, valueOfFirstCard));
 		int valueOfSecondCard = 9;
