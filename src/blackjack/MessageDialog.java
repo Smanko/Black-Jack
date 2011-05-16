@@ -17,9 +17,9 @@ public class MessageDialog extends Dialog{
 	}
 
 	protected Control createDialogArea(Composite parent) {
-		Text text = new Text(parent, SWT.NONE);
+		Text text = new Text(parent, SWT.MULTI);
 		text.setEditable(false);
-		text.append(mess);
+		text.setText(mess);
 		return parent;
 	}
 }
