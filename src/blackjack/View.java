@@ -3,7 +3,6 @@ package blackjack;
 import model.BlackJackHand;
 import model.Card;
 import model.Deck;
-import model.Hand;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;

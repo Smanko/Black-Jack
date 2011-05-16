@@ -60,4 +60,15 @@ public class TestBJHand {
 		hand.add(new Card(Suite.DIAMONDS, 14));
 		assertEquals(valueOfFirstCard+valueOfSecondCard+1, hand.getScore());
 	}
+	
+	@Test
+	public void shouldOnlyEvaluateOneAto1IfTotalValueOfHandExceeds21(){
+		BlackJackHand hand = new BlackJackHand();
+		int valueOfFirstCard = 14;
+		hand.add(new Card(Suite.DIAMONDS, valueOfFirstCard));
+		int valueOfSecondCard = 9;
+		hand.add(new Card(Suite.DIAMONDS, valueOfSecondCard));
+		hand.add(new Card(Suite.HEARTS, 14));
+		assertEquals(21, hand.getScore());
+	}
 }
